@@ -15,4 +15,15 @@ html, body {
     background-color: #595843; 
     font-family: "monserrat";
 }
-
+h1{
+    color: #591D1D;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 20px;
+}
+main{
+    background-image: url(assets/definitivo1-removebg-preview.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+}
