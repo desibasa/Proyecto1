@@ -1,0 +1,41 @@
+
+#navbar{
+    height: 75px;
+    background-color: black;
+    color: #595843;
+    margin: -2vh;
+
+}
+#navbar ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#navbar ul li{
+    width: 70px;
+    height: 70px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.primerli{
+    margin-left: 700px;
+    margin-right: -30px;
+}
+.ultimoli{
+    margin-right: 100px;
+}
+a{
+    color: #595843;
+    text-decoration: none;
+}
+main {
+    height: 100vh;
+}
+.icono{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
