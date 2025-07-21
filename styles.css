@@ -2,7 +2,17 @@
     font-family: "monserrat";
     src:url(letras/Montserrat/static/Montserrat-Bold.ttf);
 }
-body {
-    background-color: #595843; 
-    font-family: "monserrat";      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #595843; 
+    font-family: "monserrat";
+}
+
