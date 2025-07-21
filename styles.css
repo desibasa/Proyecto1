@@ -2,17 +2,32 @@
     font-family: "monserrat";
     src:url(letras/Montserrat/static/Montserrat-Bold.ttf);
 }
-body{
-    width: 1400px;
-    height: auto;
-    background-image: linear-gradient(grey, black);
-    background-repeat: no-repeat;
-    min-height: 100vh;
+body {
+    background-color: #595843; 
+    font-family: "monserrat";      
 }
-ul{
+#navbar{
+    height: 75px;
+    background-color: black;
+    color: #595843;
+    margin: -2vh;
+
+}
+#navbar ul{
+    height: 100%;
     list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-left: 50%;
-    font-family: "monserrat";
+    
+}
+#navbar ul li{
+    width: 70px;
+    height: 70px;
+}
+.ultimoli{
+    margin-right: 50px;
+}
+main {
+    height: 100vh;
 }
