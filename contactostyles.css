@@ -1,0 +1,66 @@
+
+.contenedor_formulario {
+    width: 800px;
+    height: 700px;
+    background-color: #73262C;
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+h2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.contenedor_formulario p{
+    width: 700px;
+}
+.formulario label{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.nombre{
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    background-color: #BFAE8E;
+}
+.formulario textarea{
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    background-color: #BFAE8E;
+}
+.enviar{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: black;
+    color: #BFAE8E;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+.enviar:hover{
+    background-color: #73262C;
+    color: #BFAE8E;
+}

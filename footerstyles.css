@@ -19,6 +19,7 @@ footer{
 }
 .container{
     display: block;
+    margin-left: 80px;
 }
 .iconos{
     width: 50px;
@@ -39,7 +40,7 @@ ul{
     margin: 15px;
 }
 .container2{
-    margin-left: 50px;
+    margin-left: 80px;
     width: 300px;
 }
 .container2 p{
