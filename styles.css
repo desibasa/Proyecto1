@@ -97,14 +97,5 @@ h1{
 .habilidad p {
     width: 700px;
 }
-@keyframes deslizar{
-    from{
-        transform: translateX(-1500px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 

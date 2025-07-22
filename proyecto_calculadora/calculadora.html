@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+
+    <div id="calculadora" class="calculadora">
+
+        <div id="resultado" class="resultado">
+            <p>...</p>
+        </div>
+
+        <div id="unocuatro" class="unocuatro">
+            <button id="uno" class="uno">1</button>
+            <button id="dos" class="dos">2</button>
+            <button id="tres" class="tres">3</button>
+            <button id="cuatro" class="cuatro">4</button>
+        </div>
+
+        <div id="cincoocho" class="cincoocho">
+            <button id="cinco" class="cinco">5</button>
+            <button id="seis" class="seis">6</button>
+            <button id="siete" class="siete">7</button>
+            <button id="ocho" class="ocho">8</button>
+        </div>
+ 
+        <div id="nuevecero" class="nuevecero">
+            <button id="nueve" class="nueve">9</button>
+            <button id="cero" class="cero">0</button>
+            <button id="intro" class="intro">intro</button>
+        </div>
+
+        <div id="operaciones" class="operaciones">
+            <button id="sumar" class="sumar">+</button>
+            <button id="restar" class="restar">-</button>
+            <button id="multiplicar" class="multiplicar">*</button>
+            <button id="dividir" class="dividir">/</button>
+        </div>
+
+    </div>
+
+    <button class="reset" onclick="reset()">reset</button>
+
+
+<script>
+
+    let resultado =document.getElementById("resultado");
+
+    let valorguardado = "";
+
+    let valorguardadodos = "";
+
+    let operacion = "";
+
+    let esperandosegundo = false;
+
+
+    function escribir(digito){
+        if(!esperandosegundo){
+            valorguardado += digito;
+            resultado.textContent = valorguardado;
+        }
+        else{
+            valorguardadodos += digito;
+            resultado.textContent = valorguardadodos;
+        }
+    }
+
+
+    document.getElementById("uno").addEventListener("click", () => 
+
+        escribir("1")
+
+    );
+
+    document.getElementById("dos").addEventListener("click", () => {
+
+        escribir("2");
+
+    });
+
+    document.getElementById("tres").addEventListener("click", () => {
+
+        escribir("3");
+
+    });
+
+    document.getElementById("cuatro").addEventListener("click", () => {
+
+        escribir("4");
+
+    });
+
+    document.getElementById("cinco").addEventListener("click", () => {
+
+        escribir("5");
+
+    });
+
+    document.getElementById("seis").addEventListener("click", () => {
+
+        escribir("6");
+
+    });
+
+    document.getElementById("siete").addEventListener("click", () => {
+
+        escribir("7");
+
+    });
+
+    document.getElementById("ocho").addEventListener("click", () => {
+
+        escribir("8");
+
+    });
+
+    document.getElementById("nueve").addEventListener("click", () => {
+
+        escribir("9");
+
+    });
+
+    document.getElementById("cero").addEventListener("click", () => {
+
+        escribir("0");
+
+    });
+
+    document.getElementById("sumar").addEventListener("click", () =>{
+
+        operacion = "+";
+        esperandosegundo = true;
+
+    });
+
+    document.getElementById("restar").addEventListener("click", () => {
+
+        operacion = "-";
+        esperandosegundo = true;
+
+    });
+
+    document.getElementById("multiplicar").addEventListener("click", () => {
+
+        operacion = "*";
+        esperandosegundo = true;
+
+    });
+
+    document.getElementById("dividir").addEventListener("click", () => {
+
+        operacion = "/";
+        esperandosegundo = true;
+
+    });
+
+    document.getElementById("intro").addEventListener("click", () => {
+
+        let num1 = parseFloat(valorguardado);
+        let num2 = parseFloat(valorguardadodos);
+        let total = 0;
+
+        if(operacion === "+"){
+            total = num1 + num2;
+            resultado.textContent = total;
+        }
+        else if(operacion === "-"){
+            total = num1 - num2;
+            resultado.textContent = total;
+        }
+        else if ( operacion === "*"){
+            total = num1 * num2;
+            resultado.textContent = total;
+        }
+        else {
+            total = num1 / num2;
+            resultado.textContent = total;
+        }
+
+    });
+
+    function reset(){
+
+        valorguardado = "";
+        valorguardadodos = "";
+        operacion = "";
+        esperandosegundo = false;
+        resultado.textContent = "...";
+
+    }
+
+
+</script>
+</body>
+</html>
