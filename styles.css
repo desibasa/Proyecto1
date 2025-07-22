@@ -23,10 +23,7 @@ h1{
     text-shadow: 2px 2px black;
 }
 .contenido_principal{
-    
-    background-repeat: no-repeat;
     width: 1400px;
-    height: 800px;
     display: flex;
 }
 .mifoto{
