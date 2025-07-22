@@ -13,17 +13,35 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #595843; 
-    font-family: "monserrat";
+    font-family: "monserrat"; 
 }
 h1{
-    color: #591D1D;
+    color: #73262C;
     font-size: 120px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    text-shadow: 2px 2px black;
 }
-main{
-    background-image: url(assets/definitivo1-removebg-preview.png);
+.contenido_principal{
+    
     background-repeat: no-repeat;
+    width: 1400px;
+    height: 800px;
+    display: flex;
+}
+.mifoto{
     width: 500px;
     height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 115px;
+    margin-top: 40px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px 5px;
+}
+.parrafos{
+    width: 700px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
