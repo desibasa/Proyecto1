@@ -1,0 +1,65 @@
+body{
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D5B5F5;
+}
+.escritorio {
+    background-image: url(pixel.png);
+    background-repeat: no-repeat;
+    width: 1120px;
+    height: 700px;
+    border: 10px solid #AB91C4;
+    border-radius: 30px;
+}
+.boton_posit{
+    width: 190px;
+    height: 125px;
+    margin-top: 490px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.escribir_posit{
+    width: 400px;
+    height: 400px;
+    background-color: #F5F5BF;
+    border: 5px solid #c1c18c;
+    border-radius: 5px;
+    display: none;              /*CAMBIAR ESTO PARA QUE NO SE VEA*/
+    justify-content: center;
+    align-items: center;
+    margin-top: -65vh;
+    margin-left: 45vh;
+    flex-direction: column;
+}
+.escribir_posit textarea{
+    width: 80%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-top: 5px;
+}
+.listo{
+    width: 90px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #AB91C4;
+    margin-top: 30px;
+}
+.corcho{
+    width: 350px;
+    height: 250px;
+    background-color: red;
+    display: grid;
+    margin-top: -23vh;
+    margin-left: 75vh;
+    transform: skew(20deg);
+}
+/* .corcho div{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+} */
