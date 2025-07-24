@@ -10,12 +10,17 @@
 #navbar ul{
     max-height: 75px;
     min-height: 75px;
+#navbar ul{
+    max-height: 75px;
+    min-height: 75px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
+    
 }
+#navbar ul li{
 #navbar ul li{
     width: 70px;
     height: 70px;
@@ -23,16 +28,20 @@
     margin-top: 20px;
 }
 .primerli{
+.primerli{
     margin-left: 700px;
 }
 .ultimoli{
+.ultimoli{
     margin-right: 100px;
 }
+a{
 a{
     color: #595843;
     text-decoration: none;
 }
 
+.icono{
 .icono{
     width: 75px;
     height: 75px;
@@ -40,8 +49,10 @@ a{
     margin-left: 20px;
 }
 #navbar ul li a:hover{
+#navbar ul li a:hover{
     color: #73262C;
 }
+.icono:hover{
 .icono:hover{
     transform: scale(1.5);
 }
