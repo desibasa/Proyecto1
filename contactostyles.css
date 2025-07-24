@@ -64,3 +64,24 @@ h2{
     background-color: #73262C;
     color: #BFAE8E;
 }
+@media (max-width:768px){
+    .contenedor_formulario{
+        width: 400px;
+        margin-left: 11px;
+        height: 750px;
+    }
+    h2{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .formulario{
+        margin: 0;
+    }
+    .formulario textarea{
+        width: 300px;
+    }
+    .contenedor_formulario p{
+        width: 300px;
+    }
+}
