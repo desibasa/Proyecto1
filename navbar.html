@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<nav class="navbar" id="navbar"> 
 
-    <nav class="navbar" id="navbar"> 
-
-        <button class="menu_toggle" id="menu_toggle" onclick="mostrar_lista()">☰</button>
-
-        <ul class="hamburguesa" id="hamburguesa">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
-        <ul id="nav_links" class="nav_links">
-
-            <a href="index.html"><img src="assets/sinfondo.png" class="icono"></a>
-
-            <li class="primerli"><a href="index.html">Inicio</a></li> 
-            <li><a href="proyectos.html">Proyectos</a></li> 
-            <li class="ultimoli"><a href="contacto.html">Contacto</a></li> 
-
-        </ul> 
-
-    </nav>
-
-    <script>
-
-        let hamburguesa = document.getElementById("hamburguesa");
-
-        function mostrar_lista(){
-            hamburguesa.style.display = "block";
-        }
-
-    </script>
-
-</body>
-</html>
+    <ul id="nav_links" class="nav_links">
+        <a href="index.html"><img src="assets/sinfondo.png" class="icono"></a>
+        <li class="primerli"><a href="index.html">Inicio</a></li> 
+        <li class="segundoli"><a href="proyectos.html">Proyectos</a></li> 
+        <li class="ultimoli"><a href="contacto.html">Contacto</a></li> 
+    </ul> 
+</nav>
