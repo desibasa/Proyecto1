@@ -30,3 +30,23 @@ h2{
     margin-left: 50px;
     margin-right: 50px;
 }
+@media (max-width:768px){
+    .principal_proyectos{
+        align-items: start;
+        margin-left: 40px;
+    }
+    .principal_proyectos h2{
+        margin-left: 80px;
+    }
+    .contenedores p{
+        display: none;
+    }
+    .contenedores {
+        width: 420px;
+        justify-content: start;
+    }
+    .contenedores a img{
+        margin-left: 83px;
+    }
+    
+}

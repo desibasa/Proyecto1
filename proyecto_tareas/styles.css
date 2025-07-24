@@ -50,16 +50,32 @@ body{
     margin-top: 30px;
 }
 .corcho{
-    width: 350px;
-    height: 250px;
-    background-color: red;
+    width: 310px;
+    height: 210px;
     display: grid;
-    margin-top: -23vh;
-    margin-left: 75vh;
-    transform: skew(20deg);
+    margin-top: -22vh;
+    margin-left: 78vh;
+    transform: skew(29deg);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px; 
+    grid-template-areas: 
+        "uno dos tres"
+        "cuatro cinco seis"
+        "siete ocho nueve";
 }
-/* .corcho div{
-    width: 20px;
-    height: 20px;
-    background-color: pink;
-} */
+.corcho div{
+    background-color: #c1c18c;
+    box-shadow: 5px 5px 20px;
+    min-width: 0; 
+    min-height: 0;
+}
+    .uno { grid-area: uno; }
+    .dos { grid-area: dos; }
+    .tres { grid-area: tres; }
+    .cuatro { grid-area: cuatro; }
+    .cinco { grid-area: cinco; }
+    .seis { grid-area: seis; }
+    .siete { grid-area: siete; }
+    .ocho { grid-area: ocho; }
+    .nueve { grid-area: nueve; }
