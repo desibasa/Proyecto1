@@ -33,7 +33,7 @@ h2{
 @media (max-width:768px){
     .principal_proyectos{
         align-items: start;
-        margin-left: 40px;
+        margin-left: 100px;
     }
     .principal_proyectos h2{
         margin-left: 80px;
@@ -48,5 +48,14 @@ h2{
     .contenedores a img{
         margin-left: 83px;
     }
-    
+    .temporal{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 80px;
+    }
+}
+.temporal{
+    font-size: 30px;
 }
