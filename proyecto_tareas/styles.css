@@ -82,3 +82,17 @@ body{
     #siete { grid-area: siete; }
     #ocho { grid-area: ocho; }
     #nueve { grid-area: nueve; }
+
+.mirar_posit{
+    width: 90px;
+    height: 53px;
+    transform: skew(10deg);
+    background-color: transparent;
+    border: none;
+}
+.mirar_posit {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+  padding: 10px;
+}

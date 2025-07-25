@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
 });
 
 let posit = document.getElementById("escribir_posit");
+let texto = document.getElementById("texto");
 
 let uno = document.getElementById("uno");
 let dos = document.getElementById("dos");
@@ -19,20 +20,90 @@ let contador = 0;
 
 function abrir_posit() {
     posit.style.display = "flex";
-
-}
+    console.log("Se hizo clic en el posit");
+};
 
 function listo(){
-        posit.style.display = "none";
-        uno.style.display = "block";
-        contador++;
-    };
+  posit.style.display = "none";
+  uno.style.display = "block";
+  let contenido = texto.value;
 
-if(contador==1){
-  function listo(){
-    posit.style.display = "none";
-    dos.style.display = "block";
-    contador++;
+  switch(contador) {
+    case 0:
+      uno.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      uno.style.display = "block";
+      break;
+    case 1:
+      dos.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      dos.style.display = "block";
+      break;
+    case 2:
+      tres.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      tres.style.display = "block";
+      break;
+    case 3:
+      cuatro.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      cuatro.style.display = "block";
+      break;
+    case 4:
+      cinco.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      cinco.style.display = "block";
+      break;
+    case 5:
+      seis.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      seis.style.display = "block";
+      break;
+    case 6:
+      siete.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      siete.style.display = "block";
+      break;
+    case 7:
+      ocho.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      ocho.style.display = "block";
+      break;
+    case 8:
+      nueve.innerHTML = `<button onclick="abrir_posit()" class="mirar_posit">${contenido}</button>`;
+      nueve.style.display = "block";
+      break;
   }
-}
+
+  contador++;
+  
+  if(contador==1){
+    alert("¡Muy bien!, ahora prueba a pulsar el posit que esta en el corcho, de esa manera podras mirar tus tareas.");
+  }
+
+
+  contador++;
+    if(contador==2){
+      dos.style.display = "block";
+    }
+    else if(contador==3){
+      tres.style.display = "block";
+    }
+    else if(contador==4){
+      cuatro.style.display = "block";
+    }
+    else if(contador==5){
+      cinco.style.display = "block";
+    }
+    else if(contador==6){
+      seis.style.display = "block";
+    }
+    else if(contador==7){
+      siete.style.display = "block";
+    }
+    else if(contador==8){
+      ocho.style.display = "block";
+    }
+    else if(contador==9){
+      nueve.style.display = "block";
+    }
+  if(contador==1){
+  alert("¡Muy bien!, ahora prueba a pulsar el posit que esta en el corcho, de esa manera podras mirar tus tareas.");
+  }
+};
+
+
+
          
