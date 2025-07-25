@@ -33,6 +33,8 @@ body{
     margin-top: -65vh;
     margin-left: 45vh;
     flex-direction: column;
+    position: relative;
+    z-index: 100;
 }
 .escribir_posit textarea{
     width: 80%;
@@ -65,17 +67,18 @@ body{
         "siete ocho nueve";
 }
 .corcho div{
-    background-color: #c1c18c;
-    box-shadow: 5px 5px 20px;
+    background-color: #F5F5BF;
+    box-shadow: 1px 1px 10px;
     min-width: 0; 
     min-height: 0;
+    display: none;
 }
-    .uno { grid-area: uno; }
-    .dos { grid-area: dos; }
-    .tres { grid-area: tres; }
-    .cuatro { grid-area: cuatro; }
-    .cinco { grid-area: cinco; }
-    .seis { grid-area: seis; }
-    .siete { grid-area: siete; }
-    .ocho { grid-area: ocho; }
-    .nueve { grid-area: nueve; }
+    #uno { grid-area: uno; }
+    #dos { grid-area: dos; }
+    #tres { grid-area: tres; }
+    #cuatro { grid-area: cuatro; }
+    #cinco { grid-area: cinco; }
+    #seis { grid-area: seis; }
+    #siete { grid-area: siete; }
+    #ocho { grid-area: ocho; }
+    #nueve { grid-area: nueve; }
