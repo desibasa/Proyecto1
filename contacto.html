@@ -17,7 +17,7 @@
         <h2>¿Tienes dudas? envianos un correo</h2>
         <form method="post" class="formulario">
             <label>Nombre : </label>
-            <input type="text" class="nombre">
+            <input type="text" class="nombre" id="nombre">
             <label>Escribe tu mensaje : </label>
             <textarea class="area"></textarea>
             <input type="submit" class="enviar" id="enviar">
@@ -27,6 +27,20 @@
 
     <footer id="footer"></footer>
 
-<script src="script.js"></script>
+<script src="script.js">
+
+    let nombre = document.getElementById("nombre");
+
+    if (nombre.value.length < 3) {
+                nombre.classList.add("input-error");
+                errornombre.textContent = "Necesitas al menos 3 caracteres";
+                valido = false;
+            }
+            else {
+                nombre.classList.remove("input-error");
+                errornombre.textContent = "";
+            }
+
+</script>
 </body>
 </html>
